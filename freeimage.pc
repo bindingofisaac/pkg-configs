@@ -1,0 +1,13 @@
+#pkg-config for freeimage in osx
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: freeimage
+Description: freeimage library
+Version:
+Requires:
+Conflicts:
+Libs:-L${libdir} -lfreeimage
+Cflags: -I${includedir}
