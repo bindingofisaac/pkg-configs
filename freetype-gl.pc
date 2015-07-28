@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: freetype-gl
+Description: freetype-gl
+Version:
+Requires:
+Conflicts:
+Libs:-L${libdir} -lfreetype-gl
+Cflags: -I${includedir}
